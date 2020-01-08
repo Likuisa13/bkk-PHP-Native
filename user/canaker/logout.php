@@ -1,0 +1,12 @@
+<?php 
+	session_start();
+	$_SESSION['username']=Null;
+    $_SESSION['level']=Null;
+    $_SESSION['id']=Null;
+    unset($_SESSION['username']);
+    unset($_SESSION['level']);
+    unset($_SESSION['id']);
+    session_unset();
+    session_destroy();
+    header("location:../../index.php");
+ ?>
